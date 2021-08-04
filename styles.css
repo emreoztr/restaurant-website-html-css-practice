@@ -1,0 +1,104 @@
+
+*{
+    margin: 0;
+}
+
+body{
+    font-family: arial;
+}
+
+header{
+    
+}
+
+.banner{
+    position: relative;
+}
+
+.banner img{
+    position: relative;
+    max-width: 100%;
+    
+}
+
+.banner .restaurant-name{
+    display: inline-block;
+    font-size: 60px;
+    background-color: black;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 20px solid #FEB614;
+    border-radius: 50px;
+}
+
+main{
+    max-width: 100%;
+    width: 1200px;
+    margin: 80px auto;
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+.maintext{
+    column-count: 2;
+    letter-spacing: 2px;
+    column-gap: 60px;
+    line-height: 30px;
+}
+
+.mainimg{
+    transform: scale(0.9);
+    transition: transform .2s;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+footer{
+    color: black;
+    background-color: #FEB614;
+    text-align: center;
+    padding: 20px;
+}
+
+nav{
+    position: sticky;
+    top: 0;
+    background-color: #FEB614;
+    
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    white-space: nowrap;
+    margin: 0 auto; /*to fill right and left automatically*/
+}
+
+nav li{
+    padding: 20px 0 20px 0;
+    text-align: center;
+    color: black;
+    width: 25%; /*displaying 4 items side by side*/
+    display: inline-block;
+    font-size: 24px;
+}
+
+nav li a{
+    text-align: center;
+    text-decoration: none;
+}
+
+.mainimg:hover{
+    transform: scale(1.0);
+}
+
+a:visited { text-decoration: none; color: white;}
+
+nav li:hover{
+    color: white;
+    background-color: black;
+}
