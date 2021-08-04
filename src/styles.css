@@ -7,16 +7,12 @@ body{
     font-family: arial;
 }
 
-header{
-    
-}
 
 .banner{
     position: relative;
 }
 
 .banner img{
-    position: relative;
     max-width: 100%;
     
 }
@@ -79,6 +75,7 @@ nav ul{
 }
 
 nav li{
+    transition: all .2s ease-in;
     padding: 20px 0 20px 0;
     text-align: center;
     color: black;
@@ -88,8 +85,15 @@ nav li{
 }
 
 nav li a{
+    display: inline-block;     
+    position: relative;    
+    z-index: 1;     
+    padding: 2em;     
+    margin: -2em; 
+    transition: all .2s ease-in;
     text-align: center;
     text-decoration: none;
+    font-weight: bolder;
 }
 
 .mainimg:hover{
@@ -99,6 +103,9 @@ nav li a{
 a:visited { text-decoration: none; color: white;}
 
 nav li:hover{
-    color: white;
     background-color: black;
+}
+
+nav li:hover a{
+    color: white;
 }
