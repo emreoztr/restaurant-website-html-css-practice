@@ -109,7 +109,6 @@ nav li a{
     color: white;
     z-index: 1;
     text-align: center;
-    font-weight: bolder;
 }
 
 .ddcontent{
@@ -132,18 +131,22 @@ nav li:hover a{
     color: white;
 }
 
+.dropdheader{
+    font-weight: bolder;
+}
+
 .dropd:hover .ddcontent{
     transition: all .2s ease-in;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    font-size: 24px;
     margin: 19px 0;
     background-color: #FEB614;
 }
 
 .ddcontent a{
+    font-size: 24px;
     min-width: 100%;
     margin: 0;
     padding: 20px 0;
