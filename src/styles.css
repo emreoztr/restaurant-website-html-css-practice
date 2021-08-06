@@ -7,17 +7,22 @@ body{
     font-family: arial;
 }
 
+footer{
+    box-shadow: 0 -4px 8px 0 rgba(0, 0, 0, 0.2);
+}
 
 .banner{
+    
     position: relative;
 }
 
 .banner img{
+    z-index: 1;
     max-width: 100%;
-    
 }
 
 .banner .restaurant-name{
+    box-shadow: 0 0px 70px 0 rgb(0, 0, 0);
     display: inline-block;
     font-size: 60px;
     background-color: black;
@@ -51,23 +56,26 @@ main{
     display: flex;
     align-content: center;
     justify-content: center;
+    z-index: 0;
 }
 
 footer{
-    color: black;
+    color: white;
     background-color: #FEB614;
     text-align: center;
     padding: 20px;
+    z-index: 1;
 }
 
 nav{
     position: sticky;
     top: 0;
     background-color: #FEB614;
-    
+    z-index: 1;
 }
 
 nav ul{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     display: flex;
     justify-content: space-between;
     white-space: nowrap;
@@ -96,6 +104,20 @@ nav li a{
     font-weight: bolder;
 }
 
+.dropd{
+    position: relative;
+    color: white;
+    z-index: 1;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.ddcontent{
+    position: absolute;
+    display: none;
+    min-width: 100%;
+}
+
 .mainimg:hover{
     transform: scale(1.0);
 }
@@ -107,5 +129,27 @@ nav li:hover{
 }
 
 nav li:hover a{
+    color: white;
+}
+
+.dropd:hover .ddcontent{
+    transition: all .2s ease-in;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 24px;
+    margin: 19px 0;
+    background-color: #FEB614;
+}
+
+.ddcontent a{
+    min-width: 100%;
+    margin: 0;
+    padding: 20px 0;
+}
+
+.ddcontent a:hover{
+    background-color: black;
     color: white;
 }
