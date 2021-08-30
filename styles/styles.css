@@ -122,8 +122,6 @@ nav li a{
     transform: scale(1.0);
 }
 
-a:visited { text-decoration: none; color: white;}
-
 nav li:hover{
     background-color: black;
 }
@@ -240,3 +238,5 @@ nav li:hover a{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 
 }
+a { text-decoration: none; color: white;}
+a:visited { text-decoration: none; color: white;}
