@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    text-decoration: none;
+}
+
+body{
+    font-family: arial;
+}
+
+footer{
+    box-shadow: 0 -4px 8px 0 rgba(0, 0, 0, 0.2);
+    color: white;
+    background-color: #FEB614;
+    text-align: center;
+    padding: 20px;
+    z-index: 1;
+}
+
+.banner{
+    
+    position: relative;
+}
+
+.banner img{
+    z-index: 1;
+    max-width: 100%;
+}
+
+.banner .restaurant-name{
+    box-shadow: 0 0px 70px 0 rgb(0, 0, 0);
+    display: inline-block;
+    font-size: 60px;
+    background-color: black;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 20px solid #FEB614;
+    border-radius: 50px;
+}
+
+main{
+    max-width: 100%;
+    width: 1200px;
+    margin: 80px auto;
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+nav{
+    position: sticky;
+    top: 0;
+    background-color: #FEB614;
+    z-index: 1;
+}
+
+nav ul{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-between;
+    white-space: nowrap;
+    margin: 0 auto; /*to fill right and left automatically*/
+}
+
+nav li{
+    transition: all .2s ease-in;
+    padding: 20px 0 20px 0;
+    text-align: center;
+    color: white;
+    width: 25%; /*displaying 4 items side by side*/
+    display: inline-block;
+    font-size: 24px;
+}
+
+nav li a{
+    display: inline-block;     
+    position: relative;    
+    z-index: 1;     
+    padding: 2em;     
+    margin: -2em; 
+    transition: all .2s ease-in;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.dropdheader{
+    font-weight: bolder;
+}
+
+.dropd{
+    position: relative;
+    color: white;
+    z-index: 1;
+    text-align: center;
+}
+
+.ddcontent{
+    position: absolute;
+    display: none;
+    min-width: 100%;
+}
+
+.ddcontent a{
+    font-size: 24px;
+    min-width: 100%;
+    margin: 0;
+    padding: 20px 0;
+}
+
+nav li:hover{
+    background-color: black;
+}
+
+nav li:hover a{
+    color: white;
+}
+
+.dropd:hover .ddcontent{
+    transition: all .2s ease-in;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 19px 0;
+    background-color: #FEB614;
+}
+
+.ddcontent a:hover{
+    background-color: black;
+    color: white;
+}
+
+a {color: white;}
+a:visited {color: white;}
+
+.maintext{
+    column-count: 2;
+    letter-spacing: 2px;
+    column-gap: 60px;
+    line-height: 30px;
+}
+
+.mainimg{
+    transform: scale(0.9);
+    transition: transform .2s;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    z-index: 0;
+}
+
+.mainimg:hover{
+    transform: scale(1.0);
+}
